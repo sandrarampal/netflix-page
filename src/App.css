@@ -1,0 +1,57 @@
+header {
+  background-color: #0f0f0f;
+  height: 100px;
+  display: flex;
+}
+
+.netflix-logo {
+  width: 25%;
+  /* border: white 2px solid; */
+}
+
+.netflix-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  background-color: #0f0f0f;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 50px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+section {
+  padding: 30px;
+}
+
+.carrousel {
+  display: flex;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.film-picture {
+  height: 192px;
+  width: 341px;
+  flex-shrink: 0;
+}
+
+.film-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
