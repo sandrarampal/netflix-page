@@ -1,4 +1,5 @@
 import data from "../assets/data.json";
+import Pictures from "./Pictures";
 
 const Section = () => {
   return (
@@ -10,11 +11,7 @@ const Section = () => {
             <h1>{netflixObj.category}</h1>
             <div className="carrousel">
               {netflixObj.images.map((url, index) => {
-                return (
-                  <div className="film-picture">
-                    <img src={url} alt="" />
-                  </div>
-                );
+                return <Pictures url={netflixObj.images[index]} />;
               })}
             </div>
           </div>
