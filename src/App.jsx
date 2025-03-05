@@ -2,19 +2,19 @@ import "./App.css";
 import data from "./assets/data.json";
 import logoNetflix from "./assets/netflix-logo.jpg";
 import Section from "./components/Section";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <header>
-        <div className="netflix-logo">
-          <img src={logoNetflix} alt="" />
-        </div>
-      </header>
+      <Header />
       <main>
-        <Section />
+        <section>
+          {data.map((netflixObj, index) => {
+            return <Section key={index} netflixObj={netflixObj} />;
+          })}
+        </section>
       </main>
-      ;
     </>
   );
 }

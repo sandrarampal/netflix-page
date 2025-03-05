@@ -5,7 +5,9 @@ header {
 }
 
 .netflix-logo {
-  width: 300px;
+  width: 200px;
+  padding-left: 30px;
+  padding-top: 30px;
   /* border: white 2px solid; */
 }
 

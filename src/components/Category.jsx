@@ -1,4 +1,4 @@
-const Category = ({ category }) => {
+const Category = () => {
   return (
     <div className="category-div">
       <h1>{netflixObj.category}</h1>
